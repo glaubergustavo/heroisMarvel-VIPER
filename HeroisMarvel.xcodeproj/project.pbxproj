@@ -8,22 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		5631CFD927DE220C0041C177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CFD827DE220C0041C177 /* AppDelegate.swift */; };
-		5631CFDB27DE220C0041C177 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CFDA27DE220C0041C177 /* SceneDelegate.swift */; };
-		5631CFDD27DE220C0041C177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CFDC27DE220C0041C177 /* ViewController.swift */; };
-		5631CFE027DE220C0041C177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5631CFDE27DE220C0041C177 /* Main.storyboard */; };
 		5631CFE227DE22100041C177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5631CFE127DE22100041C177 /* Assets.xcassets */; };
 		5631CFE527DE22100041C177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5631CFE327DE22100041C177 /* LaunchScreen.storyboard */; };
+		5631CFEE27DE2ADC0041C177 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CFED27DE2ADC0041C177 /* BasePresenter.swift */; };
+		5631CFF027DE2AED0041C177 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CFEF27DE2AEC0041C177 /* BaseManager.swift */; };
+		5631CFF227DE2AF00041C177 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CFF127DE2AF00041C177 /* BaseRouter.swift */; };
+		5631CFF827DE2CBA0041C177 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CFF727DE2CBA0041C177 /* Extensions.swift */; };
+		5631CFFA27DE2FA80041C177 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CFF927DE2FA80041C177 /* Constants.swift */; };
+		5631CFFC27DE2FEC0041C177 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631CFFB27DE2FEC0041C177 /* Enums.swift */; };
+		5651B03527E06C1E0072ACBF /* HeroesDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5651B03427E06C1E0072ACBF /* HeroesDetails.storyboard */; };
+		566ABCC027DE62F4007BF141 /* SearchHeroesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCBF27DE62F4007BF141 /* SearchHeroesRouter.swift */; };
+		566ABCC227DE6304007BF141 /* SearchHeroesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCC127DE6304007BF141 /* SearchHeroesManager.swift */; };
+		566ABCC427DE6337007BF141 /* SearchHeroesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCC327DE6337007BF141 /* SearchHeroesPresenter.swift */; };
+		566ABCC627DE6357007BF141 /* SearchHeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCC527DE6357007BF141 /* SearchHeroesViewController.swift */; };
+		566ABCC827DE636E007BF141 /* SearchHeroes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566ABCC727DE636E007BF141 /* SearchHeroes.storyboard */; };
+		566ABCD327DE80B8007BF141 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCD227DE80B8007BF141 /* HeroTableViewCell.swift */; };
+		566ABCD427DE984E007BF141 /* HeroesDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCCF27DE76F4007BF141 /* HeroesDetailsRouter.swift */; };
+		566ABCD527DE9852007BF141 /* HeroesDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCCE27DE76F4007BF141 /* HeroesDetailsManager.swift */; };
+		566ABCD627DE9855007BF141 /* HeroesDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCCC27DE76F4007BF141 /* HeroesDetailsPresenter.swift */; };
+		566ABCD727DE9858007BF141 /* HeroesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCD027DE76F4007BF141 /* HeroesDetailsViewController.swift */; };
+		566ABCDC27DEABE8007BF141 /* MarvelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCDB27DEABE8007BF141 /* MarvelInfo.swift */; };
+		566ABCDE27DEAC25007BF141 /* MarvelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCDD27DEAC25007BF141 /* MarvelData.swift */; };
+		566ABCE027DEAC50007BF141 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCDF27DEAC50007BF141 /* Hero.swift */; };
+		566ABCE227DEACB0007BF141 /* ThumbnailHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCE127DEACB0007BF141 /* ThumbnailHero.swift */; };
+		566ABCE427DEACD6007BF141 /* HeroURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566ABCE327DEACD6007BF141 /* HeroURL.swift */; };
+		7835B487A5FAA49B37B979A4 /* Pods_HeroisMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4249D8D7BE66BCA246BCC5C0 /* Pods_HeroisMarvel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18153ECA69EC40F8CB9A709F /* Pods-HeroisMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroisMarvel.release.xcconfig"; path = "Target Support Files/Pods-HeroisMarvel/Pods-HeroisMarvel.release.xcconfig"; sourceTree = "<group>"; };
+		4249D8D7BE66BCA246BCC5C0 /* Pods_HeroisMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroisMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5631CFD527DE220C0041C177 /* HeroisMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroisMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5631CFD827DE220C0041C177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5631CFDA27DE220C0041C177 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5631CFDC27DE220C0041C177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5631CFDF27DE220C0041C177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5631CFE127DE22100041C177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5631CFE427DE22100041C177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5631CFE627DE22100041C177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5631CFED27DE2ADC0041C177 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		5631CFEF27DE2AEC0041C177 /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		5631CFF127DE2AF00041C177 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		5631CFF727DE2CBA0041C177 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5631CFF927DE2FA80041C177 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5631CFFB27DE2FEC0041C177 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		5651B03427E06C1E0072ACBF /* HeroesDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HeroesDetails.storyboard; sourceTree = "<group>"; };
+		566ABCBF27DE62F4007BF141 /* SearchHeroesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeroesRouter.swift; sourceTree = "<group>"; };
+		566ABCC127DE6304007BF141 /* SearchHeroesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeroesManager.swift; sourceTree = "<group>"; };
+		566ABCC327DE6337007BF141 /* SearchHeroesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeroesPresenter.swift; sourceTree = "<group>"; };
+		566ABCC527DE6357007BF141 /* SearchHeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeroesViewController.swift; sourceTree = "<group>"; };
+		566ABCC727DE636E007BF141 /* SearchHeroes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchHeroes.storyboard; sourceTree = "<group>"; };
+		566ABCCC27DE76F4007BF141 /* HeroesDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesDetailsPresenter.swift; sourceTree = "<group>"; };
+		566ABCCE27DE76F4007BF141 /* HeroesDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesDetailsManager.swift; sourceTree = "<group>"; };
+		566ABCCF27DE76F4007BF141 /* HeroesDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesDetailsRouter.swift; sourceTree = "<group>"; };
+		566ABCD027DE76F4007BF141 /* HeroesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesDetailsViewController.swift; sourceTree = "<group>"; };
+		566ABCD227DE80B8007BF141 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		566ABCDB27DEABE8007BF141 /* MarvelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelInfo.swift; sourceTree = "<group>"; };
+		566ABCDD27DEAC25007BF141 /* MarvelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelData.swift; sourceTree = "<group>"; };
+		566ABCDF27DEAC50007BF141 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		566ABCE127DEACB0007BF141 /* ThumbnailHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailHero.swift; sourceTree = "<group>"; };
+		566ABCE327DEACD6007BF141 /* HeroURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroURL.swift; sourceTree = "<group>"; };
+		D7AEF1754497A6BA629CF6C9 /* Pods-HeroisMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroisMarvel.debug.xcconfig"; path = "Target Support Files/Pods-HeroisMarvel/Pods-HeroisMarvel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7835B487A5FAA49B37B979A4 /* Pods_HeroisMarvel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +85,8 @@
 			children = (
 				5631CFD727DE220C0041C177 /* HeroisMarvel */,
 				5631CFD627DE220C0041C177 /* Products */,
+				6D33402DA459B54175D41A35 /* Pods */,
+				BFC6091BB27C4E7A407BFFD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +101,115 @@
 		5631CFD727DE220C0041C177 /* HeroisMarvel */ = {
 			isa = PBXGroup;
 			children = (
-				5631CFD827DE220C0041C177 /* AppDelegate.swift */,
-				5631CFDA27DE220C0041C177 /* SceneDelegate.swift */,
-				5631CFDC27DE220C0041C177 /* ViewController.swift */,
-				5631CFDE27DE220C0041C177 /* Main.storyboard */,
+				5631CFE627DE22100041C177 /* Info.plist */,
 				5631CFE127DE22100041C177 /* Assets.xcassets */,
 				5631CFE327DE22100041C177 /* LaunchScreen.storyboard */,
-				5631CFE627DE22100041C177 /* Info.plist */,
+				5631CFD827DE220C0041C177 /* AppDelegate.swift */,
+				5631CFEC27DE2ABC0041C177 /* Base */,
+				5631CFF327DE2B270041C177 /* Common */,
+				5631CFF627DE2C040041C177 /* Modules */,
 			);
 			path = HeroisMarvel;
+			sourceTree = "<group>";
+		};
+		5631CFEC27DE2ABC0041C177 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5631CFED27DE2ADC0041C177 /* BasePresenter.swift */,
+				5631CFEF27DE2AEC0041C177 /* BaseManager.swift */,
+				5631CFF127DE2AF00041C177 /* BaseRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5631CFF327DE2B270041C177 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5631CFF527DE2BD30041C177 /* Entities */,
+				5631CFF427DE2B7E0041C177 /* Classes */,
+				566ABCD127DE804C007BF141 /* Cells */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5631CFF427DE2B7E0041C177 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5631CFF727DE2CBA0041C177 /* Extensions.swift */,
+				5631CFF927DE2FA80041C177 /* Constants.swift */,
+				5631CFFB27DE2FEC0041C177 /* Enums.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5631CFF527DE2BD30041C177 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				566ABCDB27DEABE8007BF141 /* MarvelInfo.swift */,
+				566ABCDD27DEAC25007BF141 /* MarvelData.swift */,
+				566ABCDF27DEAC50007BF141 /* Hero.swift */,
+				566ABCE127DEACB0007BF141 /* ThumbnailHero.swift */,
+				566ABCE327DEACD6007BF141 /* HeroURL.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5631CFF627DE2C040041C177 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				566ABCC927DE7640007BF141 /* SearchHeroes */,
+				566ABCCB27DE76D2007BF141 /* HeroesDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		566ABCC927DE7640007BF141 /* SearchHeroes */ = {
+			isa = PBXGroup;
+			children = (
+				566ABCC727DE636E007BF141 /* SearchHeroes.storyboard */,
+				566ABCC527DE6357007BF141 /* SearchHeroesViewController.swift */,
+				566ABCC327DE6337007BF141 /* SearchHeroesPresenter.swift */,
+				566ABCC127DE6304007BF141 /* SearchHeroesManager.swift */,
+				566ABCBF27DE62F4007BF141 /* SearchHeroesRouter.swift */,
+			);
+			path = SearchHeroes;
+			sourceTree = "<group>";
+		};
+		566ABCCB27DE76D2007BF141 /* HeroesDetails */ = {
+			isa = PBXGroup;
+			children = (
+				5651B03427E06C1E0072ACBF /* HeroesDetails.storyboard */,
+				566ABCD027DE76F4007BF141 /* HeroesDetailsViewController.swift */,
+				566ABCCC27DE76F4007BF141 /* HeroesDetailsPresenter.swift */,
+				566ABCCE27DE76F4007BF141 /* HeroesDetailsManager.swift */,
+				566ABCCF27DE76F4007BF141 /* HeroesDetailsRouter.swift */,
+			);
+			path = HeroesDetails;
+			sourceTree = "<group>";
+		};
+		566ABCD127DE804C007BF141 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				566ABCD227DE80B8007BF141 /* HeroTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6D33402DA459B54175D41A35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7AEF1754497A6BA629CF6C9 /* Pods-HeroisMarvel.debug.xcconfig */,
+				18153ECA69EC40F8CB9A709F /* Pods-HeroisMarvel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFC6091BB27C4E7A407BFFD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4249D8D7BE66BCA246BCC5C0 /* Pods_HeroisMarvel.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5631CFE927DE22100041C177 /* Build configuration list for PBXNativeTarget "HeroisMarvel" */;
 			buildPhases = (
+				EC771E9A38089F5FF05F670D /* [CP] Check Pods Manifest.lock */,
 				5631CFD127DE220C0041C177 /* Sources */,
 				5631CFD227DE220C0041C177 /* Frameworks */,
 				5631CFD327DE220C0041C177 /* Resources */,
+				DE9FB3C4037AD16839ADC105 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +272,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566ABCC827DE636E007BF141 /* SearchHeroes.storyboard in Resources */,
 				5631CFE527DE22100041C177 /* LaunchScreen.storyboard in Resources */,
 				5631CFE227DE22100041C177 /* Assets.xcassets in Resources */,
-				5631CFE027DE220C0041C177 /* Main.storyboard in Resources */,
+				5651B03527E06C1E0072ACBF /* HeroesDetails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DE9FB3C4037AD16839ADC105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeroisMarvel/Pods-HeroisMarvel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeroisMarvel/Pods-HeroisMarvel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HeroisMarvel/Pods-HeroisMarvel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC771E9A38089F5FF05F670D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeroisMarvel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5631CFD127DE220C0041C177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5631CFDD27DE220C0041C177 /* ViewController.swift in Sources */,
+				5631CFF827DE2CBA0041C177 /* Extensions.swift in Sources */,
 				5631CFD927DE220C0041C177 /* AppDelegate.swift in Sources */,
-				5631CFDB27DE220C0041C177 /* SceneDelegate.swift in Sources */,
+				566ABCD527DE9852007BF141 /* HeroesDetailsManager.swift in Sources */,
+				5631CFF227DE2AF00041C177 /* BaseRouter.swift in Sources */,
+				566ABCDE27DEAC25007BF141 /* MarvelData.swift in Sources */,
+				566ABCC427DE6337007BF141 /* SearchHeroesPresenter.swift in Sources */,
+				566ABCE027DEAC50007BF141 /* Hero.swift in Sources */,
+				5631CFEE27DE2ADC0041C177 /* BasePresenter.swift in Sources */,
+				566ABCE227DEACB0007BF141 /* ThumbnailHero.swift in Sources */,
+				566ABCC227DE6304007BF141 /* SearchHeroesManager.swift in Sources */,
+				566ABCD727DE9858007BF141 /* HeroesDetailsViewController.swift in Sources */,
+				5631CFFC27DE2FEC0041C177 /* Enums.swift in Sources */,
+				566ABCDC27DEABE8007BF141 /* MarvelInfo.swift in Sources */,
+				566ABCD327DE80B8007BF141 /* HeroTableViewCell.swift in Sources */,
+				566ABCC627DE6357007BF141 /* SearchHeroesViewController.swift in Sources */,
+				566ABCD427DE984E007BF141 /* HeroesDetailsRouter.swift in Sources */,
+				566ABCD627DE9855007BF141 /* HeroesDetailsPresenter.swift in Sources */,
+				566ABCC027DE62F4007BF141 /* SearchHeroesRouter.swift in Sources */,
+				566ABCE427DEACD6007BF141 /* HeroURL.swift in Sources */,
+				5631CFF027DE2AED0041C177 /* BaseManager.swift in Sources */,
+				5631CFFA27DE2FA80041C177 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5631CFDE27DE220C0041C177 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5631CFDF27DE220C0041C177 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5631CFE327DE22100041C177 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +484,7 @@
 		};
 		5631CFEA27DE22100041C177 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7AEF1754497A6BA629CF6C9 /* Pods-HeroisMarvel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +495,7 @@
 				INFOPLIST_FILE = HeroisMarvel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +513,7 @@
 		};
 		5631CFEB27DE22100041C177 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18153ECA69EC40F8CB9A709F /* Pods-HeroisMarvel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +524,7 @@
 				INFOPLIST_FILE = HeroisMarvel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
